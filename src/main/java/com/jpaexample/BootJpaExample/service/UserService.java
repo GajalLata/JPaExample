@@ -31,7 +31,6 @@ public class UserService {
 
 	}
 
-
 	public User updateUser(int userId, User updatedUser){
 		User user = userRepository.findById(userId).orElse(null);
 		System.out.println("*** /n OLD DATA: " + user);
@@ -45,18 +44,4 @@ public class UserService {
 		return user;
 
 	}
-
-
-
-
-
-//    UserRepository userRepository = context.getBean(UserRepository.class);
-//    User user = new User();
-//		user.setName("Gajal Lata");
-//		user.setCity("Delhi");
-//		user.setStatus("I am Java Programmer");
-//
-//
-//    User user1 = userRepository.save(user);
-//		System.out.println(user1);
 }
